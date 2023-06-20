@@ -31,4 +31,4 @@ This project is licensed under the [MIT License](LICENSE).
 - [Wikipedia API](https://pypi.org/project/Wikipedia-API/) - for the sample code on data collection from Wikipedia.
 
 ### Disclaimer
-This repository serves as a tutorial and starting point for building a QA system from a company documentation corpus. It is important to customize and adapt the code, data, and approaches to suit your specific use case and requirements. The provided code and resources are not intended to be used as-is for production environments, but rather as a learning resource.
+This repository serves as a tutorial and starting point for building a QA system. It is important to customize and adapt the code, data, and approaches to suit your specific use case and requirements. The provided code and resources are not intended to be used as-is for production environments, but rather as a learning resource.
