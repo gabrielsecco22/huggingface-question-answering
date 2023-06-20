@@ -1,6 +1,6 @@
-## Question Answering from Company Documentation Corpus using Hugging Face Transformers
+## Question Answering using Hugging Face Transformers
 
-This repository contains code and resources for building a Question Answering (QA) system from a company documentation corpus using Hugging Face Transformers. The QA system utilizes powerful transformer models to extract precise information from a collection of company documents.
+This repository contains code and resources for building a Question Answering (QA) system.
 
 ### Requirements
 - Python 3.7 or above
