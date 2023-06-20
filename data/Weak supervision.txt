@@ -1,0 +1,145 @@
+Title: Weak supervisionSummary: Weak supervision, also called semi-supervised learning, is a branch of machine learning that combines a small amount of labeled data with a large amount of unlabeled data during training. Semi-supervised learning falls between unsupervised learning (with no labeled training data) and supervised learning (with only labeled training data). Semi-supervised learning aims to alleviate the issue of having limited amounts of labeled data available for training. 
+
+Semi-supervised learning is motivated by problem settings where unlabeled data is abundant and obtaining labeled data is expensive. Other branches of machine learning that share the same motivation but follow different assumptions and methodologies are active learning and weak supervision. Unlabeled data, when used in conjunction with a small amount of labeled data, can produce considerable improvement in learning accuracy. The acquisition of labeled data for a learning problem often requires a skilled human agent (e.g. to transcribe an audio segment) or a physical experiment (e.g. determining the 3D structure of a protein or determining whether there is oil at a particular location). The cost associated with the labeling process thus may render large, fully labeled training sets infeasible, whereas acquisition of unlabeled data is relatively inexpensive. In such situations, semi-supervised learning can be of great practical value. Semi-supervised learning is also of theoretical interest in machine learning and as a model for human learning.
+More formally, semi-supervised learning assumes a set of 
+  
+    
+      
+        l
+      
+    
+    {\displaystyle l}
+   independently identically distributed examples 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            l
+          
+        
+        ∈
+        X
+      
+    
+    {\displaystyle x_{1},\dots ,x_{l}\in X}
+   with corresponding labels 
+  
+    
+      
+        
+          y
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          
+            l
+          
+        
+        ∈
+        Y
+      
+    
+    {\displaystyle y_{1},\dots ,y_{l}\in Y}
+   and 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   unlabeled examples 
+  
+    
+      
+        
+          x
+          
+            l
+            +
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            l
+            +
+            u
+          
+        
+        ∈
+        X
+      
+    
+    {\displaystyle x_{l+1},\dots ,x_{l+u}\in X}
+   are processed. Semi-supervised learning combines this information to surpass the classification performance that can be obtained either by discarding the unlabeled data and doing supervised learning or by discarding the labels and doing unsupervised learning.
+Semi-supervised learning may refer to either transductive learning or inductive learning. The goal of transductive learning is to infer the correct labels for the given unlabeled data 
+  
+    
+      
+        
+          x
+          
+            l
+            +
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            l
+            +
+            u
+          
+        
+      
+    
+    {\displaystyle x_{l+1},\dots ,x_{l+u}}
+   only. The goal of inductive learning is to infer the correct mapping from 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   to 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  .
+Intuitively, the learning problem can be seen as an exam and labeled data as sample problems that the teacher solves for the class as an aid in solving another set of problems. In the transductive setting, these unsolved problems act as exam questions. In the inductive setting, they become practice problems of the sort that will make up the exam.
+It is unnecessary (and, according to Vapnik's principle, imprudent) to perform transductive learning by way of inferring a classification rule over the entire input space; however, in practice, algorithms formally designed for transduction or induction are often used interchangeably.Sections:   - Assumptions: In order to make any use of unlabeled data, some relationship to the underlying distribution of data must exist. Semi-supervised learning algorithms make use of at least one of the following assumptions:   - History: The heuristic approach of self-training (also known as self-learning or self-labeling) is historically the oldest approach to semi-supervised learning, with examples of applications starting in the 1960s.The transductive learning framework was formally introduced by Vladimir Vapnik in the 1970s. Interest in inductive learning using generative models also began in the 1970s. A probably approximately correct learning bound for semi-supervised learning of a Gaussian mixture was demonstrated by Ratsaby and Venkatesh in 1995.Semi-supervised learning has recently become more popular and practically relevant due to the variety of problems for which vast quantities of unlabeled data are available—e.g. text on websites, protein sequences, or images.   - Methods:    - In human cognition: Human responses to formal semi-supervised learning problems have yielded varying conclusions about the degree of influence of the unlabeled data. More natural learning problems may also be viewed as instances of semi-supervised learning. Much of human concept learning involves a small amount of direct instruction (e.g. parental labeling of objects during childhood) combined with large amounts of unlabeled experience (e.g. observation of objects without naming or counting them, or at least without feedback).
+Human infants are sensitive to the structure of unlabeled natural categories such as images of dogs and cats or male and female faces. Infants and children take into account not only unlabeled examples, but the sampling process from which labeled examples arise.   - See also: PU learning   - References:    - Sources: Chapelle, Olivier; Schölkopf, Bernhard; Zien, Alexander (2006). Semi-supervised learning. Cambridge, Mass.: MIT Press. ISBN 978-0-262-03358-9.   - External links: Manifold Regularization A freely available MATLAB implementation of the graph-based semi-supervised algorithms Laplacian support vector machines and Laplacian regularized least squares.
+KEEL: A software tool to assess evolutionary algorithms for Data Mining problems (regression, classification, clustering, pattern mining and so on) KEEL module for semi-supervised learning.
+Semi-Supervised Learning Software Semi-Supervised Learning Software
+Semi-Supervised learning — scikit-learn documentation Semi-supervised learning in scikit-learn.

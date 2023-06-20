@@ -1,0 +1,13 @@
+Title: Unsupervised learningSummary: Unsupervised learning refers to algorithms that learn patterns from unlabeled data.
+In contrast to supervised learning where models learn to map the input to the target output (e.g. images labeled as a "cat" or "fish"), unsupervised methods learn concise representations of the input data, which can be used for data exploration or to analyze or generate new data. The other levels in the supervision spectrum are reinforcement learning where the machine is given only a "performance score" as guidance, and semi-supervised learning where only a portion of training data is labeled.Sections:   - Neural networks:    - Probabilistic methods: Two of the main methods used in unsupervised learning are principal component and cluster analysis. Cluster analysis is used in unsupervised learning to group, or segment, datasets with shared attributes in order to extrapolate algorithmic relationships. Cluster analysis is a branch of machine learning that groups the data that has not been labelled, classified or categorized. Instead of responding to feedback, cluster analysis identifies commonalities in the data and reacts based on the presence or absence of such commonalities in each new piece of data. This approach helps detect anomalous data points that do not fit into either group.
+A central application of unsupervised learning is in the field of density estimation in statistics, though unsupervised learning encompasses many other domains involving summarizing and explaining data features. It can be contrasted with supervised learning by saying that whereas supervised learning intends to infer a conditional probability distribution  conditioned on the label  of input data; unsupervised learning intends to infer an a priori probability distribution .   - See also: Automated machine learning
+Cluster analysis
+Anomaly detection
+Expectation–maximization algorithm
+Generative topographic map
+Meta-learning (computer science)
+Multivariate analysis
+Radial basis function network
+Weak supervision   - References: 
+
+== Further reading ==
